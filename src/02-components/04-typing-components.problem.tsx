@@ -1,14 +1,18 @@
 import React from "react";
 
-export const Button = (props: unknown) => {
-  return <button className={props.className}></button>;
+type ButtonProps = {
+  className: string
+}
+
+export const Button = ({className}: ButtonProps) => {
+  return <button className={className}></button>;
 };
 
 const Parent = () => {
   return (
     <>
-      {/* @ts-expect-error */}
-      <Button></Button>
+
+      <Button className="size-8"></Button>
 
       <Button className="my-class"></Button>
     </>
