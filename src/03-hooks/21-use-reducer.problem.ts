@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "../helpers/type-utils.js";
 
 type ReducerState = { count: number };
 type ReducerAction =
